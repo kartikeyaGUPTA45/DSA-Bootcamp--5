@@ -11,15 +11,18 @@ public class Main
 {
 	public static void main(String[] args) {
 	    
-	    int a = 50;
-	    long b = 60;
-	    double c = 79.3445678900987654;
-	    float f = 45.34345678904567890f;
-	    char ch = 'a';
+	    int a_ = 50;
+	    long b$ = 60;
+	    double c1 = 79.3445678900987654;
+	    float _f = 45.34345678904567890f;
+	    char $ch = 'a';
 	    String str = "asjfbsdjkgbskdj";
 	    boolean flag = true;
+	    int A_ = 500;
+	    int breakK = 345;
+	    int abc_def = 600;
 	    
-	    System.out.println(a + " " + b + " " + c + " " + ch + " " + str + " " + flag + " " + f);
+	    System.out.println(a_ + " " + b$ + " " + c1 + " " + $ch + " " + str + " " + flag + " " + _f + " " + A_);
 	   // System.out.println(b);
 	   // System.out.println(c);
 	   // System.out.println(ch);
