@@ -13,17 +13,19 @@ public class Main
 	    
 	    int a = 50;
 	    long b = 60;
-	    double c = 79.34;
+	    double c = 79.3445678900987654;
+	    float f = 45.34345678904567890f;
 	    char ch = 'a';
 	    String str = "asjfbsdjkgbskdj";
 	    boolean flag = true;
 	    
-	    System.out.println(a);
-	    System.out.println(b);
-	    System.out.println(c);
-	    System.out.println(ch);
-	    System.out.println(str);
-	    System.out.println(flag);
+	    System.out.println(a + " " + b + " " + c + " " + ch + " " + str + " " + flag + " " + f);
+	   // System.out.println(b);
+	   // System.out.println(c);
+	   // System.out.println(ch);
+	   // System.out.println(str);
+	   // System.out.println(flag);
+	   // System.out.println(f);
 	   
 	}
 }
