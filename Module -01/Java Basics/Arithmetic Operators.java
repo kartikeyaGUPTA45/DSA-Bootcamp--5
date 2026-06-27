@@ -16,19 +16,25 @@ public class Main
 // 		System.out.println("Divide a and b: " + ans4);
 // 		System.out.println("Remainder a and b: " + ans5);
 
-        double a = 3;
-		double b = 2;
+        int a = 3;
+		int b = 2;
 		
-		double ans1 = a+b;
-		double ans2 = a-b;
-		double ans3 = a*b;
-		double ans4 = a/b;
-		double ans5 = a%b;
+// 		double ans1 = a+b;
+// 		double ans2 = a-b;
+// 		double ans3 = a*b;
+// 		double ans4 = a/b;
+// 		double ans5 = a%b;
 		
-		System.out.println("Add a and b: " + ans1);
-		System.out.println("Subtract a and b: " + ans2);
-		System.out.println("Multiply a and b: " + ans3);
-		System.out.println("Divide a and b: " + ans4);
-		System.out.println("Remainder a and b: " + ans5);
+// 		System.out.println("Add a and b: " + ans1);
+// 		System.out.println("Subtract a and b: " + ans2);
+// 		System.out.println("Multiply a and b: " + ans3);
+// 		System.out.println("Divide a and b: " + ans4);
+// 		System.out.print("Remainder a and b: " + ans5);
+
+        double ans1 = (double)(a/b);
+        double ans2 = (double)a/b;
+        
+        System.out.println("Ans1: " + ans1);
+        System.out.println("Ans2: " + ans2);
 	}
 }
