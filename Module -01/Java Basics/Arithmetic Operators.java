@@ -31,10 +31,12 @@ public class Main
 // 		System.out.println("Divide a and b: " + ans4);
 // 		System.out.print("Remainder a and b: " + ans5);
 
-        double ans1 = (double)(a/b);
-        double ans2 = (double)a/b;
+        double ans1 = (a/b);
+        double ans2 = (double)(a)/b;
+        int ans3 = a/b;
         
         System.out.println("Ans1: " + ans1);
         System.out.println("Ans2: " + ans2);
+        System.out.println("Ans3: " + ans3);
 	}
 }
