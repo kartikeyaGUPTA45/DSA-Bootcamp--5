@@ -13,16 +13,26 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-		System.out.println("Enter the input for a");
-		int a = scn.nextInt();
-		System.out.println("Enter the input for b");
-		long b = scn.nextLong();
-		System.out.println("Enter the input for c");
-		boolean c = scn.nextBoolean();
+// 		System.out.println("Enter the input for a");
+// 		int a = scn.nextInt();
+// 		System.out.println("Enter the input for b");
+// 		long b = scn.nextLong();
+// 		System.out.println("Enter the input for c");
+// 		boolean c = scn.nextBoolean();
 		
 		
-		System.out.println("User input for a is : " + a);
-		System.out.println("User input for b is : " + b);
-		System.out.println("User input for c is : " + c);
+// 		System.out.println("User input for a is : " + a);
+// 		System.out.println("User input for b is : " + b);
+// 		System.out.println("User input for c is : " + c);
+        // String str = scn.nextLine();
+        // System.out.println(str);
+        
+        // String str = scn.next();
+        // System.out.println(str);
+        
+        char str = scn.nextLine().charAt(0);
+        System.out.println(str);
+        
+        
 	}
 }
