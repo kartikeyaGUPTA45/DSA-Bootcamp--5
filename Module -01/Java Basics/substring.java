@@ -11,7 +11,7 @@ public class Main {
 	   //System.out.println(str.substring(5,13));
 	   //System.out.println(str.substring(5,12));
 	   //System.out.println(str.substring(5,5));
-	   System.out.println(str.substring(11,5)); // I will check 
+	   System.out.println(str.substring(11,5)); // startingIndex <= endingIndex
 	   //System.out.println(str.substring(14,14));
 	   //System.out.println(str.substring(12)); // Length of the string is 12
 	   //System.out.println(str.substring(13));
