@@ -1,0 +1,12 @@
+package com.oops.concepts;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main { // Main is the starting point of code
+    public static void main(String[] args) {
+        BankAccount bankAccount = new BankAccount("234567", "sjdfgakjsfd", 30000);
+        bankAccount.deposit(456789);
+        bankAccount.withdraw(56789);
+
+    }
+}
