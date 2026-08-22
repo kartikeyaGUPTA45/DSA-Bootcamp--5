@@ -6,11 +6,23 @@ public class Main {
 
     // Main is the starting point of code
     public static void main(String[] args) {
-        DataExporter csv = new CSVExporter();
-        csv.export(List.of("Hello", "World"));
+        Admin admin = new Admin("Admin", "abc", "Admin@gmail.com");
+        admin.addUser();
+        admin.deleteUser();
+        System.out.println(admin.getUserAddress());
 
-        DataExporter json = new JSONExporter();
-        json.export(List.of("Hello", "World"));
+        System.out.println("***************");
+        Customer customer = new Customer("Customer", "def", "customer@gmail.com");
+        customer.placeOrder();
+        customer.cancelOrder();
+        System.out.println(customer.getUserName());
+
+        System.out.println("*******************");
+        Vendor vendor = new Vendor("Vendor", "ghi", "vendor@gmail.com");
+        vendor.addProduct();
+        vendor.removeProduct();
+        vendor.updateProduct();
+        System.out.println(vendor.getUserAddress());
 
     }
 }
