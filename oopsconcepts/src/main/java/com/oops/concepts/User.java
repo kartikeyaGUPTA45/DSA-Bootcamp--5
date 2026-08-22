@@ -2,9 +2,9 @@ package com.oops.concepts;
 
 public class User {
 
-    private String name;
-    private String address;
-    private String email;
+    protected String name;
+    protected String address;
+    protected String email;
 
     public User(String name, String address, String email) {
         this.name = name;
