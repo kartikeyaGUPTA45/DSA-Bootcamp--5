@@ -1,16 +1,16 @@
 package com.oops.concepts;
 
-import testing.def;
+import java.util.List;
 
 public class Main {
 
     // Main is the starting point of code
     public static void main(String[] args) {
-        Circle circle = new Circle(5);
-        circle.describe();
+        DataExporter csv = new CSVExporter();
+        csv.export(List.of("Hello", "World"));
 
-        Rectangle rectangle = new Rectangle(4, 6);
-        rectangle.describe();
+        DataExporter json = new JSONExporter();
+        json.export(List.of("Hello", "World"));
 
     }
 }
