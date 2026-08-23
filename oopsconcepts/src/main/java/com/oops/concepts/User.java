@@ -2,9 +2,9 @@ package com.oops.concepts;
 
 public class User {
 
-    protected String name;
-    protected String address;
-    protected String email;
+    private String name;
+    private String address;
+    private String email;
 
     public User(String name, String address, String email) {
         this.name = name;
@@ -22,6 +22,10 @@ public class User {
 
     public String getUserAddress() {
         return this.address;
+    }
+
+    public void printData() {
+        System.out.println("I am from parent class");
     }
 
 }

@@ -1,18 +1,14 @@
 package com.oops.concepts;
 
 public class BankAccount {
-    private String accountNumber;
-    private String ownerName;
-    private double balance;
+    protected String accountNumber;
+    protected String ownerName;
+    protected double balance;
 
     public BankAccount(String accountNumber, String ownerName, double balance) {
         this.accountNumber = accountNumber;
         this.ownerName = ownerName;
         this.balance = balance;
-    }
-
-    public BankAccount() {
-
     }
 
     public void deposit(double amount) {
@@ -27,11 +23,10 @@ public class BankAccount {
             this.balance-= amount;
             return true;
         }
-
         return false;
     }
 
-    public double getBalance() {
-        return this.balance;
+    public void displayAccount() {
+        System.out.println("Account Number: " + this.accountNumber + ", Owner Name: " + this.ownerName + ", Balance: " + this.balance);
     }
 }

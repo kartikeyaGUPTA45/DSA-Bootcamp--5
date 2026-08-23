@@ -13,5 +13,9 @@ public class Admin extends User {
     public void addUser() {
         System.out.println("User added successfully");
     }
+
+    public void printData() {
+        System.out.println("I am from Admin child class");
+    }
 }
 
