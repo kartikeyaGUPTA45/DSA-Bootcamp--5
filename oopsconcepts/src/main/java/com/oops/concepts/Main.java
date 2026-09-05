@@ -1,33 +1,23 @@
 package com.oops.concepts;
 
+import java.text.Normalizer;
 import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
+import java.util.TreeMap;
 
 public class Main {
 
     // Main is the starting point of code
     public static void main(String[] args) {
-        System.out.println("Bank Account");
-        BankAccount bankAccount = new BankAccount("123456789", "John Doe", 1000.0);
-        bankAccount.displayAccount();
-        bankAccount.deposit(500.0);
-        bankAccount.withdraw(200.0);
-        bankAccount.displayAccount();
+        List<NotificationService> list = List.of(
+                new EmailNotificationService("abc@gmail.com", "abc", "This is the email message"),
+                new SmsNotificationService("9876543210", "xyz", "This is the sms message"),
+                new PushNotificationService("WQRR1232", "mno", "This is the push message")
+        );
 
-        System.out.println("***************");
-        System.out.println("Savings Account");
-        SavingsAccount savingsAccount = new SavingsAccount("123456788", "Sendil", 1000.0, 3.5);
-        savingsAccount.displayAccount();
-        savingsAccount.deposit(500.0);
-        System.out.println(savingsAccount.withdraw(1450.0));
-        savingsAccount.displayAccount();
-
-        System.out.println("*******************");
-        System.out.println("Checking Account");
-        CheckingAccount checkingAccount = new CheckingAccount("123456787", "John", 1000.0, 100.0);
-        checkingAccount.displayAccount();
-        checkingAccount.deposit(500.0);
-        checkingAccount.withdraw(200.0);
-        checkingAccount.displayAccount();
-
+        for(NotificationService notificationService : list) {
+            notificationService.send();
+        }
     }
 }
