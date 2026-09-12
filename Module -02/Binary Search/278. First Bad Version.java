@@ -3,13 +3,13 @@
 
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
-        long low = 1, high = n;
+        int low = 1, high = n;
 
-        long ans = 0;
+        int ans = 0;
         while(low <= high) {
-            long mid = (low + high)/2;
+            int mid = low + (high-low)/2;
 
-            if (isBadVersion((int)mid)) {
+            if (isBadVersion(mid)) {
                 ans = mid;
                 high = mid-1;
             } else {
@@ -17,7 +17,7 @@ public class Solution extends VersionControl {
             }
         }
 
-        return (int)ans;
+        return ans;
     }
 }
 
